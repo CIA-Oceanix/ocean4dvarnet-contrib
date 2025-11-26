@@ -272,6 +272,14 @@ jobs:
       - name: Install global dependencies
         uses: ./.github/actions/install-deps
 
+      - name: Install doc dependecies 
+        run: |
+          pip install --upgrade pip
+          pip install tomlq
+          PIP_DOC_PACKAGE=$(tomlq -r '.project."optional-dependencies".doc | join(" ")' pyproject.toml)
+          echo "Installing doc dependencies : $PIP_DOC_PACKAGE"
+          pip install $PIP_DOC_PACKAGE
+
       - name: debug
         run: |
            sudo apt install -y tree
