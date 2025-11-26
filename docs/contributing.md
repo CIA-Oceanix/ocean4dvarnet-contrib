@@ -9,14 +9,19 @@ Thank you for your interest to developping additional contributions for the ocea
 For contributing to the development of ocean4dvarnet-contrib, please follow these steps:
 
 - Fork the ocean4dvarnet-contrib repository on GitHub to your personal/organisation account. See the [GitHub tutorial : https://docs.github.com/en/get-started/quickstart/fork-a-repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
-- Set up the development environment following the instructions in the [setting-up-the-development-environment](setting-up-the-development-environment.md) documentation.
+- Set up the development environment following the instructions in the documentations :
+    - [Setting up a CUDA + PyTorch environment wtih Mamba](https://cia-oceanix.github.io/ocean4dvarnet/contributing/pytorch-mamba-env/)
+    - [Setting up the development environment](https://cia-oceanix.github.io/ocean4dvarnet/contributing/dev-env-set-up/)
 - Create a new branch for your developments, following the [ocean4dvarnet branching-guidelines](https://cia-oceanix.github.io/ocean4dvarnet/contributing/guidelines/#branching-guidelines)
 - Make your changes and ensure that your changes adhere to the [ocean4dvarnet contributing-guidelines](https://cia-oceanix.github.io/ocean4dvarnet/contributing/)
-    - To contribute to an existing contribution, make ypour change in the contribution code
+    - To contribute to an existing contribution, make your change in the contribution code
     - To add e new contribution, follow the guide [Creating a New Contribution](./init-new-contrib.md)
 - Commit your changes and push your branch to your fork on GitHub.
 - Open a Pull Request against the `main` branch of the original repository, set a PR title according to the [ocean4dvarnet Commit and PR Message Guidelines](https://cia-oceanix.github.io/ocean4dvarnet/contributing/guidelines/#commit-and-pr-message-guidelines) and fill in the Pull Request template.
 -  Request a review from maintainers or other contributors, which will follow the code-review-process.
+
+*rem : you can find some [usefull scripts and tools](./scripts/index.md)* in the script directory of the repository.
+
 
 ---
 ##  Code Review Process

@@ -1,5 +1,9 @@
 # Manage ocean4dVarnet Contributions
 
+This repository contains a set of additionals contributions for the ocean4dvarnet package.
+
+The full documentation of the package available at : https://cia-oceanix.github.io/ocean4dvarnet-contrib/
+
 - [Tools](./scripts/README.md)
 - [Contributions](./contrib/README.md)
 
