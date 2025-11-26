@@ -1,7 +1,7 @@
-site_name: Ocean4DVarNet Contribs Documentation
-site_url: https://yourdomain.com
-repo_url: https://github.com/yourrepo/ocean4dvarnet
-edit_uri: ""
+site_name: Ocean4DVarNet Contributions Documentation
+site_url: https://cia-oceanix.github.io/ocean4dvarnet-contrib/
+repo_url: https://github.com/CIA-Oceanix/ocean4dvarnet-contrib/
+copyright: "Copyright &copy; IMT Atlantique/OceaniX. This software is governed by the CeCILL-C license under French law and abiding by the rules of distribution of free software."
 
 theme:
   name: material
