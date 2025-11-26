@@ -3,6 +3,7 @@ This script generates Markdown documentation for a specific subdirectory
 inside the 'contrib' directory of a project.
 
 It performs the following tasks:
+
 - Reads metadata from a `pyproject.toml` file located in the contrib submodule.
 - Creates a `README.md` file in the corresponding `docs/contrib/<subdir>` directory
   with badges, metadata table, and links to individual module documentation.
@@ -13,6 +14,7 @@ This tool is intended to help automate documentation generation for modular
 contrib packages, especially in a monorepo-style structure.
 
 Requirements:
+
 - Python 3.11+ (uses `tomllib`), or
 - Python 3.6–3.10 with `tomli` installed (`pip install tomli`)
 """
@@ -28,12 +30,14 @@ def generate_python_file_docs(module_name: str, subdir_path: str, docdir_path: s
     Generates a Markdown documentation file for each Python module in the given subdirectory.
 
     Args:
-        module_name (str): The name of the contribution module (used in headings and paths).
-        subdir_path (str): Path to the source contrib directory.
-        docdir_path (str): Path where the Markdown documentation files will be written.
+
+    - module_name (str): The name of the contribution module (used in headings and paths).
+    - subdir_path (str): Path to the source contrib directory.
+    - docdir_path (str): Path where the Markdown documentation files will be written.
 
     Returns:
-        list: List of Python module filenames (without .py extension) that were processed.
+
+    - list: List of Python module filenames (without .py extension) that were processed.
     """
     entries = []
     for file in os.listdir(subdir_path):
@@ -57,11 +61,12 @@ def write_readme(module_name: str, docdir_path: str, metadata: Optional[dict],
     and links to individual module docs.
 
     Args:
-        module_name (str): The name of the contrib submodule.
-        docdir_path (str): Output path for the README.md file.
-        metadata (Optional[dict]): Metadata dictionary from pyproject.toml.
-        py_files (list): List of processed Python file names (no extensions).
-        subdir_path (str): Path to the original contrib source directory.
+
+    - module_name (str): The name of the contrib submodule.
+    - docdir_path (str): Output path for the README.md file.
+    - metadata (Optional[dict]): Metadata dictionary from pyproject.toml.
+    - py_files (list): List of processed Python file names (no extensions).
+    - subdir_path (str): Path to the original contrib source directory.
     """
     readme_path = os.path.join(docdir_path, "README.md")
 
@@ -100,9 +105,10 @@ def generate_markdown_for_contrib(module_name: str,
     Orchestrates the documentation generation for a contrib submodule.
 
     Args:
-        module_name (str): Name of the submodule inside contrib/.
-        contrib_dir (str): Path to the contrib source directory.
-        docs_dir (str): Path to the output documentation directory.
+
+    - module_name (str): Name of the submodule inside contrib/.
+    - contrib_dir (str): Path to the contrib source directory.
+    - docs_dir (str): Path to the output documentation directory.
     """
     subdir_path = os.path.join(contrib_dir, module_name)
     docdir_path = os.path.join(docs_dir, module_name)

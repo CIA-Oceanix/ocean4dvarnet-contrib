@@ -23,10 +23,12 @@ def is_valid_contribution_name(name: str):
     The name must only contain lowercase letters, digits, and underscores.
 
     Args:
-        name (str): The contribution name to validate.
+
+    - name (str): The contribution name to validate.
 
     Returns:
-        bool: True if the name is valid, False otherwise.
+
+    - bool: True if the name is valid, False otherwise.
     """
     return re.fullmatch(r'[a-z0-9_]+', name) is not None
 
@@ -36,6 +38,7 @@ def create_contribution(name):
     Create a new contribution directory with a README.md, metadatas.yml, __init__.py, code and tests files.
 
     Parameters:
+
     - name (str): The name of the contribution.
     """
     contrib_root = './contrib'

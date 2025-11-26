@@ -2,6 +2,7 @@
 This script synchronizes the `docs/contrib` directory with the `contrib` directory.
 
 Steps:
+
 1. List subdirectories in `contrib` and `docs/contrib`.
 2. Remove subdirectories in `docs/contrib` that do not exist in `contrib`.
 3. Display subdirectories in `contrib` that are missing in `docs/contrib`.
@@ -9,6 +10,7 @@ Steps:
    of valid subdirectories.
 
 Example:
+
     If `contrib` contains:
     ```
     contrib/
@@ -27,6 +29,7 @@ Example:
     ```
 
     After execution:
+
     - `docs/contrib/folder4` will be removed.
     - `docs/contrib/index.md` will be generated with links to valid README.md files.
 """

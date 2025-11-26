@@ -5,6 +5,7 @@ This repository contains a set of additionals contributions for the ocean4dvarne
 - [List of contributions](./contrib/index.md)
 
 Contributing :
-    - Develop a [new contribution](./contributing.md)
-    - [Initialize a new contribution](./init-new-contrib.md)
-    - [Usefull scripts and tools](./scripts/index.md)
+
+- Develop a [new contribution](./contributing.md)
+- [Initialize a new contribution](./init-new-contrib.md)
+- [Usefull scripts and tools](./scripts/index.md)

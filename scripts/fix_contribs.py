@@ -1,20 +1,23 @@
 """
-Module: fix_contribs
-
 This module provides functionality to ensure that necessary files and directories 
-exist for each contribution in a specified contributions directory. It automates 
-the creation of essential files such as `pyproject.toml`, `README.md`, `__init__.py`, 
-a main Python file, and test files for each subdirectory within the contributions 
-directory. Additionally, it ensures the presence of a `tests` directory for each 
+exist for each contribution in a specified contributions directory.
+
+It automates the creation of essential files such as `pyproject.toml`, `README.md`,
+`__init__.py`, a main Python file, and test files for each subdirectory within the
+contributions directory.
+
+Additionally, it ensures the presence of a `tests` directory for each 
 contribution.
 
 Functions:
-    - create_files_for_contribs: Ensures the existence of required files and directories 
-      for each contribution subdirectory.
+
+- Create_files_for_contribs: Ensures the existence of required files and directories 
+  for each contribution subdirectory.
 
 Usage:
-    Run this script directly to automatically create or verify the required files 
-    and directories for contributions in the specified `CONTRIB_DIR`.
+
+- Run this script directly to automatically create or verify the required files 
+  and directories for contributions in the specified `CONTRIB_DIR`.
 """
 
 import os
@@ -47,6 +50,7 @@ def create_files_for_contribs() -> None:
 
     This function performs the following tasks for each subdirectory in the 
     contributions directory:
+    
     - Checks if a `pyproject.toml` file exists; if not, creates one.
     - Checks if a `README.md` file exists; if not, creates one.
     - Checks if an `__init__.py` file exists; if not, creates one.
